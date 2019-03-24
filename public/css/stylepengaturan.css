@@ -1,0 +1,55 @@
+body {
+	background-color: #00475b;
+	margin: 0px;
+}
+
+ul {
+    background-color: #003d4f;
+    list-style-type: none;
+    margin: 0;
+    padding: 25px;
+    overflow: hidden;
+    height: 100px;
+}
+
+ul h1 {
+	float: right;
+    color: #dff9fb;
+}
+
+ul img {
+	margin-top: 10px;
+	height: 30px;
+	width: 50px;
+}
+
+.exite {
+	float: right;
+	margin-top: 25px;
+	margin-right: 30px;
+}
+
+.exite img {
+	width: 40px;
+	height: 40px;
+	padding: 5px;
+}
+
+.container {
+	margin-top: 100px;
+}
+
+.card {
+	border-radius: 10px;
+}
+
+.card-body .table {
+	font-size: 15px;
+	text-align: center;
+}
+
+.btn {
+	float: right;
+}
+
+

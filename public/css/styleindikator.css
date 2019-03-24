@@ -1,0 +1,175 @@
+.dota {
+    margin-top: -305px;
+    position: relative;
+    top: 20px;
+    z-index: 2;
+}
+
+.dota .container .row {
+    margin-left: 10px;
+}
+
+.dota .container .row p {
+    float: right;
+    margin-right: 15px;
+    margin-top: 2px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.dotb {
+    margin-top: 215px;
+    position: relative;
+    top: 20px;
+    z-index: 2;
+}
+
+.dotb .container .row p {
+    float: right;
+    margin-right: 15px;
+    margin-top: 2px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+#indikatora {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    -webkit-animation: scale-up-center 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite alternate both;
+            animation: scale-up-center 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite alternate both;
+}
+#indikatorb {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    -webkit-animation: scale-up-center 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite alternate both;
+            animation: scale-up-center 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite alternate both;
+}
+#indikatorc {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    -webkit-animation: scale-up-center 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite alternate both;
+            animation: scale-up-center 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite alternate both;
+}
+#indikatord {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    -webkit-animation: scale-up-center 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite alternate both;
+            animation: scale-up-center 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite alternate both;
+}
+#indikatore {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    -webkit-animation: scale-up-center 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite alternate both;
+            animation: scale-up-center 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite alternate both;
+}
+#indikatorf {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    -webkit-animation: scale-up-center 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite alternate both;
+            animation: scale-up-center 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite alternate both;
+}
+#indikatorg {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    -webkit-animation: scale-up-center 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite alternate both;
+            animation: scale-up-center 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite alternate both;
+}
+#indikatorh {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    -webkit-animation: scale-up-center 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite alternate both;
+            animation: scale-up-center 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite alternate both;
+}
+#indikatori {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    -webkit-animation: scale-up-center 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite alternate both;
+            animation: scale-up-center 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite alternate both;
+}
+#indikatorj {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    -webkit-animation: scale-up-center 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite alternate both;
+            animation: scale-up-center 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite alternate both;
+}
+#indikatork {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    -webkit-animation: scale-up-center 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite alternate both;
+            animation: scale-up-center 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite alternate both;
+}
+#indikatorl {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    -webkit-animation: scale-up-center 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite alternate both;
+            animation: scale-up-center 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite alternate both;
+}
+#indikatorm {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    -webkit-animation: scale-up-center 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite alternate both;
+            animation: scale-up-center 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite alternate both;
+}
+#indikatorn {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    -webkit-animation: scale-up-center 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite alternate both;
+            animation: scale-up-center 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite alternate both;
+}
+
+
+.ubahwarnahijau {
+    background-color: #4cd137;
+}
+.ubahwarnaorange {
+    background-color: #fa8231;
+}
+.ubahwarnamerah {
+    background-color: #ff3838;
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2019-2-12 9:21:48
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation scale-up-center
+ * ----------------------------------------
+ */
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}

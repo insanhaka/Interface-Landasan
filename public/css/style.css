@@ -1,0 +1,91 @@
+body {
+	background-color: #00475b;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #003d4f;
+    height: 75px;
+}
+
+
+li img {
+    width: 220px;
+    height: 70px;
+    float: left;
+}
+
+li a img {
+    width: 70px;
+    height: 70px;
+    float: right;
+    padding: 15px;
+}
+
+
+
+.landasan img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    height: 290px;
+    margin-top: 15px;
+}
+
+
+
+
+
+
+
+.waktu .row {
+    height: 30px;
+    width: 100%;
+}
+#clock {
+    margin-top: 30px;
+    margin-left: 35px;
+}
+#date {
+    margin-top: 30px;
+    float: right;
+}
+
+
+.tabel {
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-top: 40px;
+}
+
+form {
+    background-color: #003d4f;
+    margin-top: 10px;
+}
+
+table {
+    color: #dff9fb;
+    text-align: center;
+}
+
+
+
+
+
+#sebelas {
+    background-color: #003544;
+}
+#tigabelas {
+    background-color: #003544;
+}
+#limabelas {
+    background-color: #003544;
+}
+ #tujuhbelas {
+    background-color: #003544;
+}

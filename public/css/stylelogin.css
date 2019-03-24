@@ -1,0 +1,56 @@
+
+body {
+	background-color: #dff9fb;
+    margin: 0;
+    font-size:14px;
+    color:#fff;
+    background-image: url("/assets/background.png");
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+    overflow: hidden;
+    height: 120px;
+}
+
+ul img {
+    height: 30px;
+    width: 70px;
+}
+
+
+h2 {
+    text-align: center;
+    color: #dff9fb;
+}
+
+.container .row img {
+    width: 400px;
+    height: 150px;
+    margin-left: 50px;
+}
+
+.container .pesan {
+    margin: auto;
+}
+
+.container .form-signin{
+    width:300px;
+    max-width:100%;
+    margin:40px auto;
+}
+
+.container .btn{
+    background-color: #45aaf2;
+    color:#fff;
+}
+
+a.daftar:link {
+    color: #fff;
+}
+
