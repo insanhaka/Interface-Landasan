@@ -74,7 +74,7 @@
 	    <div class="col-7">
 	      <div class="card">
 			  <div class="card-header" style="font-size: 18px; background-color: #dff9fb; border-radius: 10px;">
-			    Pengaturan Treshold
+			    Pengaturan Admin
 			  </div>
 			  <div class="card-body">
 			    <blockquote class="blockquote mb-0">

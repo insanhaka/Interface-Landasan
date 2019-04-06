@@ -2,6 +2,17 @@ $(document).ready(function(){
               loadData();
             })
 
+	  
+	  	var suara = document.createElement('audio');
+		  	suara.src = "assets/alarm.mp3";
+		  	//suara.load();
+		  	//suara.autoPlay = false;
+		  	suara.loop = false;
+		  	//suara.preLoad = true;
+			//suara.controls = true;
+		  	suara.muted = false 
+
+
       function loadData() {
         $.getJSON('api/batasan', function(data){
         var normal=(data['batasan'][(Object.keys(data['batasan']).length)-1]['normal']);
@@ -22,32 +33,19 @@ $(document).ready(function(){
       	var nilaioff = ('-');
       	var now = Math.floor(new Date().getTime()/1000)+3*8395;
 
-      	var suara = new Audio();
-		  	suara.src = "assets/alarm.mp3";
-		  	suara.load();
-		  	//suara.autoPlay = false;
-		  	//suara.loop = true;
-		  	//suara.preLoad = true;
-		  	//suara.controls = true;
-		  	suara.muted = false
-
-		var syaratbunyi = awas * 14 * 0.9 ;
+		var syaratbunyi = awas * 14 * 0.25 ;
 		
-
 		var total = 0;
 		for (var i = 0; i < sensor.length; i++) {
 			total += parseInt(sensor[i].level);
 
 			if (total >= syaratbunyi) {
 				suara.play();
-			}else if (){
+			}else{
 				suara.pause();
 			}
 		}
 		
-		console.log(syaratbunyi);
-		console.log(total);
-
         for (var i in sensor){
           if (sensor[i].ip == "192.168.1.11") {
             var sensor11 = sensor[i].level;
