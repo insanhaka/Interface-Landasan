@@ -19,6 +19,8 @@
 
   	<ul>
   		<li><img src="assets/logo.png"></li>
+      <li><img class="knkt" src="assets/knkt.png"></li>
+      <li><img class="undip" src="assets/undip.png"></li>
   		<li><a href="/pengaturan">
           <img src="assets/setting.png">
       </a></li>

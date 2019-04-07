@@ -142,13 +142,18 @@
               loadData();
             });
 
-        
-          var suara = document.createElement("audio");
-              suara.src = "assets/alarm.mp3";
-              suara.loop = false;
+
+          var suara1 = document.createElement("audio");
+              suara1.src = "assets/alarmWaspada.mp3";
+              suara1.loop = false;
+              //suara.muted = false;
+
+
+          var suara2 = document.createElement("audio");
+              suara2.src = "assets/alarmBahaya.mp3";
+              suara2.loop = false;
               //suara.muted = false;
         
-       
 
       var Aman = ('AMAN');
       var Waspada = ('WASPADA');
@@ -171,7 +176,7 @@
         var nilai = res;
 
         var now = Math.floor(new Date().getTime()/1000)+3*8395;
-        var syaratbunyi = awas * 14 * 0.25 ;
+        //var syaratbunyi = awas * 14 * 0.25 ;
         var totalnow = now * 14;
         var totalwaktusensor = 0;
         //var total = 0;
@@ -192,22 +197,68 @@
           //console.log(totalwaktusensor);
         }
 
-        var counts = {};
+    //Kode Menghitung Sensor yang mendeteksi WASPADA
+        var countsb = {};
+        var countsw = {};
+        var countsn = {};
         for (var n = 0; n < sensor.length; n++){
-          var num = sensor[n].level > awas;
-          counts[num] = counts[num] ? counts[num] + 1 : 1;
+          var num = sensor[n].level;
+          if(num >= awas){
+            countsb[num] = countsb[num] ? countsb[num] + 1 : 1;
+          }else if(num > normal){
+            countsw[num] = countsw[num] ? countsw[num] + 1 : 1;
+          }else{
+            countsn[num] = countsn[num] ? countsn[num] + 1 : 1;
+          }
+          
         }
 
-        var coba = counts[Object.keys(counts)[Object.keys(counts).length - 1]];
+        var coba1 = 0;
+            for (var tambah of Object.values(countsb)){
+              coba1 += tambah;
+            }
+        var coba2 = 0;
+            for (var hitung of Object.values(countsw)){
+              coba2 += hitung;
+            }
+        var coba3 = 0;
+            for (var sum of Object.values(countsn)){
+              coba3 += sum;
+            }
 
-        console.log(counts);
+        console.log(countsb);
+        console.log(coba1);
+
+        if (coba2 > 12  && totalnow < totalwaktusensor){
+            suara1.play();
+        }else if(coba1 > 3 && totalnow < totalwaktusensor){
+            suara1.pause();
+            suara2.play();
+        }else{
+          suara1.pause();
+          suara2.pause();
+        }
+        
+        /*
+    //Kode Menghitung Sensor yang mendeteksi BAHAYA
+        var countsb = {};
+        for (var n = 0; n < sensor.length; n++){
+          var numb = sensor[n].level > awas;
+          countsb[numb] = countsb[numb] ? countsb[numb] + 1 : 1;
+        }
+
+        var coba = countsb[Object.keys(countsb)[Object.keys(countsb).length - 1]];
+
+        console.log(countsb);
         console.log(coba);
 
         if (coba > 3 && totalnow < totalwaktusensor){
-          suara.play();
+          suara1.pause();
+          suara2.play();
         }else{
-          suara.pause();
+          suara2.pause();
         }
+        */
 
         
     
