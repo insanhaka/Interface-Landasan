@@ -21,18 +21,18 @@ class PengaturanController extends Controller
 
     	$batasan = array('normal'=>$normal, 'bahaya'=>$bahaya);
 
-    	DB::table('batasan')->insert($batasan);
+    	DB::table('databatasan')->insert($batasan);
 
     	return redirect('/pengaturan');
     }
 
-    public function dataBatasan() {
-        
-        $batasans = DB::table('batasan')
+    public function dataBatasan() 
+    {    
+        $batasans = DB::table('databatasan')
                     ->select('normal', 'bahaya')
                     // ->where('ip', $ip)
                     ->whereIn('id', function($query) {
-                        $query->selectRaw('max(id) from `batasan`');
+                        $query->selectRaw('max(id) from `databatasan`');
                     })
                     ->orderBy('id')
                     ->take(1)
@@ -41,4 +41,29 @@ class PengaturanController extends Controller
         return response()->json(['batasan' => $batasans]);
     }
 
+    public function insertalarm (request $request)
+    {
+        $alarm = $request->input('persentase');
+
+        $bunyi = array('persentase'=>$alarm);
+
+        DB::table('dataalarm')->insert($bunyi);
+
+        return redirect('/pengaturan');
+    }
+
+    public function dataAlarm() 
+    {    
+        $alarm = DB::table('dataalarm')
+                    ->select('persentase')
+                    // ->where('ip', $ip)
+                    ->whereIn('id', function($query) {
+                        $query->selectRaw('max(id) from `dataalarm`');
+                    })
+                    ->orderBy('id')
+                    ->take(1)
+                    ->get();
+
+        return response()->json(['alarm' => $alarm]);
+    }
 }

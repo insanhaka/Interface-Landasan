@@ -1,4 +1,4 @@
-@extends('layout.master')
+@extends('home.master')
 
 @section('waktu')
 <div class="waktu">

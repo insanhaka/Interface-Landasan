@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateBatasanTable extends Migration
+class CreateDataalarmTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,9 @@ class CreateBatasanTable extends Migration
      */
     public function up()
     {
-        Schema::create('batasan', function (Blueprint $table) {
+        Schema::create('dataalarm', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('normal');
-            $table->integer('bahaya');
+            $table->integer('persentase');
         });
     }
 
@@ -27,6 +26,6 @@ class CreateBatasanTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('batasan');
+        Schema::dropIfExists('dataalarm');
     }
 }

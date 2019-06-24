@@ -12,16 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('auth/login');
+    return view('auth.login');
 });
-
-Route::get('/login', 'AuthController@login')->name('login');
-Route::post('/postlogin', 'AuthController@postlogin');
-Route::get('/logout', 'AuthController@logout');
-Route::post('/insertbatasan', 'PengaturanController@insertbatasan');
-Route::post('/insertadmin', 'AuthController@insertadmin');
-Route::get('/admin/{id}/hapus', 'AuthController@hapusadmin');
-
 
 Route::group(['middleware' => 'auth'], function()
 {
@@ -30,4 +22,10 @@ Route::group(['middleware' => 'auth'], function()
 	Route::get('/register', 'AuthController@register');
 });
 
-
+Route::get('/login', 'AuthController@login')->name('login');
+Route::post('/postlogin', 'AuthController@postlogin');
+Route::get('/logout', 'AuthController@logout');
+Route::post('/insertbatasan', 'PengaturanController@insertbatasan');
+Route::post('/insertadmin', 'AuthController@insertadmin');
+Route::get('/admin/{id}/hapus', 'AuthController@hapusadmin');
+Route::post('/insertalarm', 'PengaturanController@insertalarm');

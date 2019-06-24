@@ -8,7 +8,7 @@
 
     <title>Pengaturan</title>
 
-    <link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/stylepengaturan.css">
 
     <script type="text/javascript" src="js/jquery.js"></script>
@@ -19,12 +19,11 @@
 
 	<ul>
 		<a href="/dashboard"><img src="assets/back.png"></a>
-  		<h1>Pengaturan Aplikasi</h1>
+		<li class="exite">
+			<a class="logout" style="color: #dff9fb;" href="/logout"><img src="assets/logout.png">Logout</a>
+		</li>
+  		<h1>Halaman Admin   ||</h1>
 	</ul>
-
-	<div class="exite">
-		<a class="logout" style="color: #dff9fb;" href="/logout"><img src="assets/logout.png">Logout</a>
-	</div>
 
 	<div class="container">
 	  <div class="row">
@@ -106,7 +105,34 @@
 			</div>
 	    </div>
 	  </div>
+	  		<div class="card" style="width: 445px; margin-top: 30px;">
+			  <div class="card-header" style="font-size: 18px; background-color: #dff9fb; border-radius: 10px;">
+			    Pengaturan Alarm
+			  </div>
+			  <div class="card-body">
+			    <blockquote>
+			    	<div class="text-center">
+			    		<p>Alarm berbunyi saat kondisi</p>
+			    	</div>
+			    	<table class="table">
+					  <tbody>
+					    <tr>
+					      <th scope="row">Bahaya</th>
+					      <td> = </td>
+					      <td id="persentase"></td>
+					      <td> % </td>
+					    </tr>
+					  </tbody>
+					</table>
+					<!-- Button trigger modal -->
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalAlarm">
+					  Edit Alarm
+					</button>
+			    </blockquote>
+			  </div>
+			</div>
 	</div>
+
 
 
 	<!-- Modal Batasan -->
@@ -143,10 +169,39 @@
 		  </div>
 		</div>
 
+		<!-- Modal Alarm -->
+		<div class="modal fade" id="ModalAlarm" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		  <div class="modal-dialog modal-dialog-centered" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLongTitle">Edit Alarm</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        	<form action="/insertalarm" method="POST">
+		        	{{ csrf_field() }}
+					  <div class="form-group row">
+					    <label for="inputnormal" class="col-4 col-form-label" style="margin-left: 20px;">Alarm berbunyi jika bahaya lebih dari </label>
+					    <div class="col-7">
+					      <input type="text" class="form-control" id="persentase" name="persentase" placeholder="Nilai dalam bilangan bulat">
+					    </div>
+					  </div>
+					  <button type="submit" class="btn btn-primary" style="margin-right: 20px; width: 100px;">
+					  	Save
+					  </button>
+					</form>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
 <script type="text/javascript">
             
       $(document).ready(function(){
          loadBatasan();
+         loadAlarm();
       })
 
       function loadBatasan() {
@@ -162,15 +217,28 @@
 	  })
       }
 
+      function loadAlarm() {
+      	$.getJSON('api/alarm', function(data){
+        var persentase=(data['alarm'][(Object.keys(data['alarm']).length)-1]['persentase']);
+
+        $('#persentase').html(persentase);
+        console.log(persentase);
+
+	  })
+      }
+
       setInterval(function(){
            loadBatasan();
       }, 1000);
 
+      setInterval(function(){
+           loadAlarm();
+      }, 2000);
 </script>
 
 
-<script src="js/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 
 </body>
 </html>

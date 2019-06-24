@@ -8,6 +8,7 @@ use App\User;
 
 class AuthController extends Controller
 {
+
     public function login()
     {
     	return view('auth.login');
@@ -56,4 +57,5 @@ class AuthController extends Controller
         $admin->delete();
         return redirect()->route('pengaturan');
     }
+
 }
