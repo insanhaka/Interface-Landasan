@@ -16,3 +16,4 @@ use Illuminate\Http\Request;
 Route::get('data-sensor', 'SensorController@dataSensor');
 Route::get('batasan', 'PengaturanController@dataBatasan');
 Route::get('alarm', 'PengaturanController@dataAlarm');
+Route::get('data-print', 'PrintController@dataPrint');

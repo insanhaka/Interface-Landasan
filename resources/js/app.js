@@ -14,4 +14,4 @@ require('./bootstrap');
 
 require('./components/Example');
 require('./components/ValueSensor');
-//require('./components/Tabel');
+require('./components/DataPrint');

@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Dataalarm extends Model
 {
-    protected $fillable = ['persentase'];
+    protected $fillable = ['persentase', 'banyak'];
 }

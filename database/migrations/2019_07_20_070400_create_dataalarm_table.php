@@ -16,6 +16,7 @@ class CreateDataalarmTable extends Migration
         Schema::create('dataalarm', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->integer('persentase');
+            $table->integer('banyak');
         });
     }
 

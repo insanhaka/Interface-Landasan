@@ -24,8 +24,14 @@
       <li><img class="knkt" src="assets/knkt.png"></li>
       -->
       <li><img class="undip" src="assets/undip.png"></li>
-  		<li><a href="/pengaturan">
-          <img src="assets/setting.png">
-      </a></li>
+      @auth
+        <li><a href="/pengaturan">
+            <img src="assets/homepage.png">
+        </a></li>
+      @else
+        <li><a href="/login">
+            <img src="assets/setting.png">
+        </a></li>
+      @endauth
       <li><p>Water Level Monitoring System</p></li>
 	 </ul>

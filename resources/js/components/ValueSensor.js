@@ -59,13 +59,6 @@ export default class ValueSensor extends Component {
             t.setState({baris2});
             //console.log(baris1);
 
-            //coding untuk indikator
-            /*for (var i in sensorlevel) {
-              if (sensorlevel[i].ip == "192.168.1.11") {
-                var sensor11
-              }
-            }*/
-
             //Coding sensor resistiv dan Debit
             for (var n in sensorlain) {
               if (sensorlain[n].ip == "192.168.1.31") {
@@ -118,13 +111,14 @@ export default class ValueSensor extends Component {
       })
     }
 
+    // Kode Setting persentase Alarm
     getAlarm(){
       var t = this;
       axios.get('/api/alarm')
       .then(res => {
         var alarm = res.data.alarm;
         for (var i = 0; i < alarm.length; i++) {
-            var persentase = 14 * alarm[i].persentase / 100;
+            var persentase = alarm[i].banyak * alarm[i].persentase / 100;
             t.setState({persentase});
             console.log(persentase);
         }
@@ -146,7 +140,7 @@ export default class ValueSensor extends Component {
       }*/
     }
     
-
+    //Kode Pengaturan bunyi alarm
     soundAlert() { 
      var t = this;
       setInterval(()=>{

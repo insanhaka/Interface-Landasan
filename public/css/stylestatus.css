@@ -1,40 +1,40 @@
 .NORMAL {
-    background-color: #4cd137;
-    font-size: 12px;
+    background-color: #05ad3e;
+    font-size: 5px;
     color: #fff;
     font-weight: bold;
-    height: 25px;
-    width: 75px;
+    height: 15px;
+    width: 35px;
     border-radius: 10px;
     border: 0px;
 }
 .WASPADA {
-    background-color: #fa8231;
-    font-size: 12px;
+    background-color: #e67e22;
+    font-size: 5px;
     color: #fff;
     font-weight: bold;
-    height: 25px;
-    width: 75px;
+    height: 15px;
+    width: 35px;
     border-radius: 10px;
     border: 0px;
 }
 .BAHAYA {
-    background-color: #ff3838;
-    font-size: 12px;
+    background-color: #c70606;
+    font-size: 5px;
     color: #fff;
     font-weight: bold;
-    height: 25px;
-    width: 75px;
+    height: 15px;
+    width: 35px;
     border-radius: 10px;
     border: 0px;
 }
 .StatusOff {
-    background-color: #8395a7;
-    font-size: 12px;
+    background-color: #76777c;
+    font-size: 5px;
     color: #fff;
     font-weight: bold;
-    height: 25px;
-    width: 75px;
+    height: 15px;
+    width: 35px;
     border-radius: 10px;
     border: 0px;
 }
@@ -54,22 +54,22 @@
 
 
 .ON {
-    background-color: #0984e3;
-    font-size: 12px;
+    background-color: #064acb;
+    font-size: 9px;
     color: #fff;
     font-weight: bold;
-    height: 25px;
-    width: 50px;
+    height: 15px;
+    width: 30px;
     border-radius: 10px;
     border: 0px;
 }
 .OFF {
-    background-color: #8395a7;
-    font-size: 12px;
+    background-color: #910913;
+    font-size: 9px;
     color: #fff;
     font-weight: bold;
-    height: 25px;
-    width: 50px;
+    height: 15px;
+    width: 30px;
     border-radius: 10px;
     border: 0px;
 }
@@ -82,3 +82,82 @@
 	background-color: #0984e3;
 }
 **/
+
+/* Desktop versi */
+@media (min-width: 992px) {
+    .NORMAL {
+        background-color: #05ad3e;
+        font-size: 12px;
+        color: #fff;
+        font-weight: bold;
+        height: 25px;
+        width: 75px;
+        border-radius: 10px;
+        border: 0px;
+    }
+    .WASPADA {
+        background-color: #e67e22;
+        font-size: 12px;
+        color: #fff;
+        font-weight: bold;
+        height: 25px;
+        width: 75px;
+        border-radius: 10px;
+        border: 0px;
+    }
+    .BAHAYA {
+        background-color: #c70606;
+        font-size: 12px;
+        color: #fff;
+        font-weight: bold;
+        height: 25px;
+        width: 75px;
+        border-radius: 10px;
+        border: 0px;
+    }
+    .StatusOff {
+        background-color: #76777c;
+        font-size: 12px;
+        color: #fff;
+        font-weight: bold;
+        height: 25px;
+        width: 75px;
+        border-radius: 10px;
+        border: 0px;
+    }
+
+    /**
+    .warnahijau {
+        background-color: #4cd137;
+    }
+    .warnaorange {
+        background-color: #fa8231;
+    }
+    .warnamerah {
+        background-color: #ff3838;
+    }
+    **/
+
+
+
+    .ON {
+        background-color: #064acb;
+        font-size: 12px;
+        color: #fff;
+        font-weight: bold;
+        height: 25px;
+        width: 50px;
+        border-radius: 10px;
+        border: 0px;
+    }
+    .OFF {
+        background-color: #910913;
+        font-size: 12px;
+        color: #fff;
+        font-weight: bold;
+        height: 25px;
+        width: 50px;
+        border-radius: 10px;
+        border: 0px;
+    }
+}

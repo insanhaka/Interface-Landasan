@@ -1,0 +1,41 @@
+body {
+	margin: 0px;
+}
+
+.navbar {
+    background-color: #010a1b;
+    list-style-type: none;
+    margin: 0;
+    padding: 25px;
+    overflow: hidden;
+    height: 100px;
+}
+
+ul h1 {
+	float: right;
+    color: #dff9fb;
+}
+
+ul img {
+	margin-top: 10px;
+	height: 30px;
+	width: 50px;
+}
+
+.datasheet {
+	margin-top: 50px;
+}
+
+.datasheet .container {
+	padding: 30px;
+	border: 1px solid #aaa;
+	border-radius: 20px;
+}
+
+.datasheet .container h3 {
+	margin-top: 20px;
+}
+
+.table {
+	margin-top: 50px;
+}

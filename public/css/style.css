@@ -1,5 +1,5 @@
 body {
-	background-color: #00475b;
+	background-color: #0e1d33;
     margin: 0;
 }
 
@@ -8,8 +8,9 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #003d4f;
+    background-color: #010a1b;
     height: 75px;
+    margin-bottom: 20px;
 }
 
 
@@ -55,7 +56,7 @@ li p {
     margin-left: auto;
     margin-right: auto;
     width: 95%;
-    height: 290px;
+    height: 130px;
     margin-top: 15px;
 }
 
@@ -66,35 +67,46 @@ li p {
 
 
 .waktu .row {
-    height: 30px;
+    height: 10px;
     width: 100%;
 }
 #clock {
-    margin-top: 20px;
+    margin-top: 15px;
     margin-left: 35px;
     font-weight: bold;
+    font-size: 12px;
 }
 #date {
-    margin-top: 20px;
+    margin-top: 15px;
     float: right;
     font-weight: bold;
+    font-size: 12px;
 }
 
 
+.col-3 {
+    margin-left: 20px;
+}
+
+.col-3 form {
+    width: 190px;
+}
+
 .tabel {
-    margin-left: 35px;
-    margin-right: 35px;
-    margin-top: 60px;
+    margin-top: 65px;
+    margin-left: 10px;
 }
 
 form {
-    background-color: #003d4f;
-    margin-top: 10px;
+    background-color: #071428;
+    margin-top: 5px;
+    width: 360px;
 }
 
 table {
-    color: #dff9fb;
+    color: #fff;
     text-align: center;
+    font-size: 9px;
 }
 
 
@@ -102,14 +114,143 @@ table {
 
 
 .sebelas {
-    background-color: #003544;
+    background-color: #010a1b;
 }
 .tigabelas {
-    background-color: #003544;
+    background-color: #010a1b;
 }
 .limabelas {
-    background-color: #003544;
+    background-color: #010a1b;
 }
 .tujuhbelas {
-    background-color: #003544;
+    background-color: #010a1b;
+}
+
+
+/* Desktop versi */
+@media (min-width: 992px) {
+
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #010a1b;
+    height: 75px;
+    margin-bottom: 20px;
+    }
+
+
+    li img {
+        width: 220px;
+        height: 70px;
+        float: left;
+    }
+
+    li .knkt {
+        width: 65px;
+        height: 65px;
+        float: left;
+        margin-top: 3px;
+        margin-left: 5px;
+    }
+
+    li .undip {
+        width: 60px;
+        height: 65px;
+        float: left;
+        margin-top: 3px;
+        margin-left: 8px;
+    }
+
+    li a img {
+        width: 70px;
+        height: 70px;
+        float: right;
+        padding: 15px;
+    }
+
+    li p {
+        float: right;
+        font-size: 32px;
+        color: #fff;
+        font-family: 'Monda', sans-serif;
+        padding-top: 10px;
+    }
+
+    .landasan img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+        height: 290px;
+        margin-top: 15px;
+    }
+
+
+
+
+
+
+
+    .waktu .row {
+        height: 30px;
+        width: 100%;
+    }
+    #clock {
+        margin-top: 20px;
+        margin-left: 35px;
+        font-weight: bold;
+        font-size: 16px;
+    }
+    #date {
+        margin-top: 20px;
+        float: right;
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .col-3 {
+        margin-left: 0px;
+    }
+
+    .col-3 form {
+        width: 100%;
+    }
+
+    .tabel {
+        margin-left: 35px;
+        margin-right: 35px;
+        margin-top: 60px;
+    }
+
+    form {
+        background-color: #071428;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    table {
+        color: #fff;
+        text-align: center;
+        font-size: 14px;
+    }
+
+
+
+
+
+    .sebelas {
+        background-color: #010a1b;
+    }
+    .tigabelas {
+        background-color: #010a1b;
+    }
+    .limabelas {
+        background-color: #010a1b;
+    }
+    .tujuhbelas {
+        background-color: #010a1b;
+    }
+
 }

@@ -43,9 +43,10 @@ class PengaturanController extends Controller
 
     public function insertalarm (request $request)
     {
+        $banyaksensor = $request->input('banyak');
         $alarm = $request->input('persentase');
 
-        $bunyi = array('persentase'=>$alarm);
+        $bunyi = array('persentase'=>$alarm, 'banyak'=>$banyaksensor);
 
         DB::table('dataalarm')->insert($bunyi);
 
@@ -55,7 +56,7 @@ class PengaturanController extends Controller
     public function dataAlarm() 
     {    
         $alarm = DB::table('dataalarm')
-                    ->select('persentase')
+                    ->select('persentase', 'banyak')
                     // ->where('ip', $ip)
                     ->whereIn('id', function($query) {
                         $query->selectRaw('max(id) from `dataalarm`');

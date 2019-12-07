@@ -24,10 +24,10 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-4">
-				<img src="assets/logo.png">
+				<img src="assets/loginpik.png">
 			</div>
 			<div class="col-sm-5 offset-sm-3">
-				<div class="container" style="border: solid 1px #00475b; padding: 70px; border-radius: 20px; background-color: #00475b; box-shadow: 9px 11px 21px -5px rgba(0,0,0,0.93);">
+				<div class="container" style="padding: 70px; border-radius: 20px; background-color: #010a1b; box-shadow: 9px 11px 21px -5px rgba(0,0,0,0.93);">
 					<h2>Registrasi Admin</h2>
 					<br>
 					<br>
@@ -71,7 +71,7 @@
 						  </div>
 
 						  <button type="submit" class="btn btn-primary btn-block">
-						  	Daftar !
+						  	Daftar
 						  </button>
 						</form>
 					</div>	

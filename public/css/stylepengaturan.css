@@ -1,10 +1,10 @@
 body {
-	background-color: #00475b;
+	background-color: #0e1d33;
 	margin: 0px;
 }
 
 ul {
-    background-color: #003d4f;
+    background-color: #010a1b;
     list-style-type: none;
     margin: 0;
     padding: 25px;
@@ -60,4 +60,14 @@ ul img {
     margin-bottom: 20px;
 }
 
+#graph {
+    width: 1100px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+#modgraph {
+    width: auto;
+    min-width: 1200px;   
+}
 
